@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Four"
+    android:id="@+id/relLayout"
+    android:background="#F6EEF2">
+
+    <!--        ads start-->
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_adds">
+    </com.google.android.gms.ads.AdView>
+
+
+
+    <!--        ads end     -->
+
+    <TextView
+        android:layout_below="@id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtone"
+        android:text="Statutory Law"
+        android:textSize="28dp"
+        android:layout_margin="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/reg"/>
+
+    <View
+        android:id="@+id/vv1"
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtone"
+        android:layout_marginBottom="10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/vv1"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"/>
+
+</RelativeLayout>

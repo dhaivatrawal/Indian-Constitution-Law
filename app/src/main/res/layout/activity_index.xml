@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".index">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/holo_red_dark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/buttonShowCustomDialog"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24dp"
+                android:gravity="center_vertical"
+                android:src="@mipmap/icon2"  />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/law"
+                android:gravity="center_vertical"
+                android:text=" LAW "
+                android:textColor="@android:color/white"
+                android:textSize="27dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/share" />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/nnstd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cdipc"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            app:cardElevation="10dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardMaxElevation="10dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        android:src="@mipmap/ipc"
+                                    />
+
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cdconsti"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            app:cardElevation="10dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardMaxElevation="10dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:scaleType="fitXY"
+                                        android:src="@mipmap/consti"
+                                    />
+
+                                </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cdcustom"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardMaxElevation="10dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/custom"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4 Basic types of Law"
+                android:textColor="#000000"
+                android:fontFamily="@font/law"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="25sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+
+            <RelativeLayout
+        android:id="@+id/rrrr"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cdone"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardMaxElevation="10dp"
+                    app:cardCornerRadius="7dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2.4"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/aa"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".6"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Civil Law"
+                            android:textSize="20dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"/>
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cdtwo"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardMaxElevation="10dp"
+                    app:cardCornerRadius="7dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2.4"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bb"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".6"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Criminal Law"
+                            android:textSize="20dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"/>
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cdthree"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardMaxElevation="10dp"
+                    app:cardCornerRadius="7dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2.4"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/cc"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".6"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Common Law"
+                            android:textSize="20dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"/>
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cdfour"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    app:cardElevation="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardMaxElevation="10dp"
+                    app:cardCornerRadius="7dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="3">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2.4"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/dd"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".6"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Statutory Law"
+                            android:textSize="20dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"/>
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+
+    </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="#19 Must known Laws"
+                android:textColor="#000000"
+                android:fontFamily="@font/law"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="25sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="#000000"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp">
+
+        <ListView
+            android:id="@+id/list"
+            android:dividerHeight="2dp"
+            android:divider="@android:color/holo_red_dark"
+            android:layout_width="match_parent"
+            android:layout_height="1270dp">
+
+        </ListView>
+
+
+    </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Law</string>
+    <string name="title_activity_detail">detail</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="interstitial_full_screen">ca-app-pub-5821701304747047/5745391282</string>
+    <string name="banner_adds">ca-app-pub-5821701304747047/2611320856</string>
+
+</resources>
